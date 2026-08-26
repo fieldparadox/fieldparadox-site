@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Field — an empty field, a real experience</title>
+<meta name="description" content="The Field is not a dating app and not social media. It's a door to a real experience with someone new. Match on activity, not compatibility.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23362706'/%3E%3Crect x='30' y='30' width='40' height='40' fill='%2348872B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&family=Source+Sans+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <span class="wordmark">The Field</span>
+    <a class="header-cta" href="#signup">Take part</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-scrim"></div>
+    <div class="wrap hero-content">
+      <h1>The Field</h1>
+      <p class="tagline">Are you ready to play?</p>
+      <p class="hero-sub">Open the door to a real experience, in the real world, with someone new.</p>
+    </div>
+  </section>
+
+  <section class="board" id="board">
+    <div class="wrap">
+      <h2 class="board-heading">Read the notes.</h2>
+      <p class="board-sub">Click one. It opens.</p>
+
+      <div class="notes-grid">
+
+        <button class="note note-1" type="button" data-target="modal-idea">
+          <span class="note-title">The Idea</span>
+          <span class="note-preview">Match on activity, not compatibility.</span>
+        </button>
+
+        <button class="note note-2" type="button" data-target="modal-how">
+          <span class="note-title">How It Works</span>
+          <span class="note-preview">Main Quest. Side Quest. Join Session. Bonus Round.</span>
+        </button>
+
+        <button class="note note-3" type="button" data-target="modal-charter">
+          <span class="note-title">The Charter</span>
+          <span class="note-preview">$500M cap. 50/5/30/15. This is permanent.</span>
+        </button>
+
+        <button class="note note-4" type="button" data-target="modal-foundation">
+          <span class="note-title">The Foundation</span>
+          <span class="note-preview">Free local events. Third places are disappearing.</span>
+        </button>
+
+        <button class="note note-5" type="button" data-target="modal-questions">
+          <span class="note-title">Open Questions</span>
+          <span class="note-preview">We don't have this figured out. Help us.</span>
+        </button>
+
+        <button class="note note-6" type="button" data-target="modal-status">
+          <span class="note-title">Where We Are</span>
+          <span class="note-preview">Pre-launch. Self-funded. Building in public.</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="signup" id="signup">
+    <div class="wrap">
+      <h2>Take part.</h2>
+      <p class="signup-sub">Not a mailing list. Tell us who you are and where you can help — building it, testing it, funding it, showing up to the first ones.</p>
+
+      <form id="signup-form" class="signup-form">
+        <label for="field-name">Name</label>
+        <input type="text" id="field-name" name="name" required autocomplete="name">
+
+        <label for="field-email">Email</label>
+        <input type="email" id="field-email" name="email" required autocomplete="email">
+
+        <label for="field-help">What can you help with? <span class="optional">(optional)</span></label>
+        <textarea id="field-help" name="help" rows="4" placeholder="Code, funding, testing, showing up, an opinion on the jury structure — whatever it is."></textarea>
+
+        <button type="submit" class="submit-btn">Send it</button>
+        <p class="signup-fallback">This opens your email client, addressed to <a href="mailto:fieldparadox@icloud.com">fieldparadox@icloud.com</a>. If it doesn't, just email us directly.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>Built in public. Always will be. <a href="https://github.com/Paradox-Cipher/The-Field" target="_blank" rel="noopener">Read the code on GitHub</a>.</p>
+    <p class="footer-contact"><a href="mailto:fieldparadox@icloud.com">fieldparadox@icloud.com</a></p>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal-overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" id="modal-close" type="button" aria-label="Close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- Modal content sources (kept off-screen, moved into the modal by JS) -->
+<div hidden>
+
+  <div id="modal-idea" data-heading="The Idea">
+    <p>Every other app in this space matches you on <em>who you are</em>: photos, bios, a personality quiz, a list of interests nobody actually checks. The Field matches you on <em>what you want to do</em>.</p>
+    <p>Compatibility is a guess. An activity is a fact. The activity is the anchor — the person is a side effect. No algorithm predicts whether two people will get along. The app puts a shared activity in front of both of them and gets out of the way.</p>
+    <p><strong>The reference scenario:</strong> Tuesday, 6pm. Jason, 28, just off work, restless, doesn't want a relationship — just wants out of the house. He filters for "bored now." Eva, 86, grandmother of eight, has a spare ticket to a play and would like company. Jason goes. They have a great night. Nobody owes anybody anything after.</p>
+    <p>No algorithm made that pairing happen. The activity did the work — and the match ran on <strong>bilateral consent</strong>, nothing else. Both people agree, at every step. No compatibility score, no "you might also like."</p>
+    <p>The Field isn't trying to predict whether you'll get along. It's trying to get you both in the room. The rest is yours.</p>
+  </div>
+
+  <div id="modal-how" data-heading="How It Works">
+    <p><strong>Main Quest.</strong> Company-posted events — ticketed or otherwise planned, signup required. This is the only place a company gets any presence in the app at all.</p>
+    <p><strong>Side Quest.</strong> User-planned outings, looking for a match. Bouldering Saturday, a hike, a pickup game, a gallery opening you don't want to walk into alone. This is the core of the app — most of what happens here is Side Quests.</p>
+    <p><strong>Join Session.</strong> Not something you post — a filter across Main Quest and Side Quest. It answers one question: what's actionable right now? Free this afternoon and want in on something today, not next week? That's a Join Session view, not a new kind of post.</p>
+    <p><strong>Bonus Round.</strong> Also not a content type — a tag. Attach it to any Main Quest or Side Quest and it means exactly one thing: whoever posted it is covering the cost. One-directional, always. Never a request for someone else to cover you.</p>
+  </div>
+
+  <div id="modal-charter" data-heading="The Charter">
+    <p>This is Section 8 — Economics. It does not move, regardless of how anyone — founder included — might feel about it later.</p>
+    <p><strong>$500M personal cap.</strong> No employee, no investor, no founder will ever personally make more than this from The Field.</p>
+    <p><strong>50 / 5 / 30 / 15.</strong> How profit splits, always. 50% to The Foundation. 5% to repay investors as fast as possible, fully cashed out, capped. 30% decided democratically by employees each cycle — reinvest it, bonus it out, give it to the Foundation, their call; if taken as cash, it splits completely equally, zero weighting for title or tenure. 15% grows whatever the org decides is worth building next.</p>
+    <p><strong>Want more money for your specific role?</strong> That's base salary, negotiated up front. The bonus pool was never where seniority gets paid.</p>
+    <p><strong>Automate, then build next.</strong> The org should automate itself out of jobs whenever it can, and build the next thing. Growth of headcount isn't the goal — continuous creation of things worth doing is.</p>
+    <p>This is written down now, before we need it to hold. That's the only time a commitment like this actually means something.</p>
+  </div>
+
+  <div id="modal-foundation" data-heading="The Foundation">
+    <p>Jobs are being automated out from under people. Third places — the spots that aren't home and aren't work, where you're just around other people with no transaction required — have all but disappeared. People need somewhere to go and something to do together that isn't work and doesn't cost money.</p>
+    <p>The Foundation runs free local events directly — concerts, city cleanups, whatever a community needs — and can partner with other companies to run bigger ones. It pairs with The Field's parent company but has a purpose independent of it: it would need to exist even if The Field never took off.</p>
+    <p>It also seeds new companies willing to adopt the same operating structure. Each one sets its own profit split — except a hard floor: minimum 30% of profit to employees, non-negotiable, in every company it seeds.</p>
+  </div>
+
+  <div id="modal-questions" data-heading="Open Questions">
+    <p>These are genuinely undecided — left open on purpose. The plan is to find out what early contributors and future users actually want and will tolerate, not to design it alone in a room. Four of the open threads:</p>
+    <p><strong>Bot / human verification.</strong> What mechanism, and what will people actually put up with? We've floated a light paid background check — maybe $10 — but haven't decided. Also open: how people want to report bad actors. (Separate from safety monitoring during real meetups, which is already settled.)</p>
+    <p><strong>Peer jury structure.</strong> When something goes wrong between two people, who decides what happened — a small rotating panel, or a larger pool? Honestly parked right now, not forgotten.</p>
+    <p><strong>Foundation governance.</strong> The most unresolved thread in the whole project. Board structure, grant criteria, how it stays independent of the parent company's commercial incentives — none of it is decided. No legal team yet, and the plan is to crowdfund and build this in public rather than take investor money just to get one.</p>
+    <p><strong>Map / city-guide scope.</strong> It's user-created, not curated top-down — but how far does that go? What should it include, what should it stay out of?</p>
+    <p>If you've got a real answer to any of these — not a hot take, an actual answer — that's what the form below is for.</p>
+  </div>
+
+  <div id="modal-status" data-heading="Where We Are">
+    <p>Pre-launch. Self-funded. No employees — right now this is people building something because they want it to exist, not because it's their job yet.</p>
+    <p>The codebase is open. What you can see is what actually exists today — no demo dressed up as a finished product, no roadmap slide standing in for working software.</p>
+    <p>We're building this in public because we'd rather be corrected early than praised late.</p>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
